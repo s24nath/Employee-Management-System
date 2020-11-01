@@ -1,0 +1,45 @@
+.login-main {
+    -fx-background-color: white;
+}
+
+.butn-button {
+    -fx-text-fill: #444444;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: white;
+    -fx-border-color: #444444;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.butn-button:hover {
+    -fx-text-fill: black;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: #1cf700;
+    -fx-border-color: #0DA9F1;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+
+}
+
+.mainbutn-button {
+    -fx-text-fill: #444444;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: white;
+    -fx-border-color: #444444;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.mainbutn-button:hover {
+    -fx-text-fill: black;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: #69FFF2;
+    -fx-border-color: #0DA9F1;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+
+}
