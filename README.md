@@ -15,7 +15,8 @@ Table Descriptions :-
 ------------------
 
 Table for Login System named "account" has 4 columns :- 
-#   I had inserted a value as a default -  Password: 'admin' ; Id: 'admin'. 
+
+* I had inserted a value as a default -  Password: 'admin' ; Id: 'admin'. * 
 
 Index   Name                Type
 -----   ----                ----
