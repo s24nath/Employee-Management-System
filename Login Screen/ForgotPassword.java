@@ -22,11 +22,11 @@ public class ForgotPassword implements Initializable {
     String q2 = "Where is your birth place ?";
     String q3 = "What is your secret hobby you haven't revealed yet ?";
     String q4 = "What is your favourite hobby ?";
-    String q5 = "What is your chilhood name ?";
+    String q5 = "What is your childhood name ?";
     String q6 = "What is your elementary school name";
     String q7 = "What is your favourite cartoon ?";
     String q8 = "What is your favourite comic ?";
-    String q9 = "What is your favourite super hero ?";
+    String q9 = "Which is your favourite super hero ?";
     String q10 = "Any secret name or code ?";
 
     @FXML
