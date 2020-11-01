@@ -31,6 +31,16 @@ public class IdChange implements Initializable {
     TextField newIdField;
 
     public void change(ActionEvent event) throws SQLException {
+        
+        if(newIdField.getText().equals("")) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setContentText("Empty Fields");
+            alert.getButtonTypes().removeAll(ButtonType.OK,ButtonType.CANCEL);
+            alert.getButtonTypes().addAll(ButtonType.CLOSE);
+            alert.showAndWait();
+            return;
+        }
 
         if(oldIdField.getText().equals(oldId) && passwordField.getText().equals(password)) {
 
