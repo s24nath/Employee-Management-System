@@ -48,6 +48,16 @@ public class ChangeSecurityQues implements Initializable {
 
 
     public void change(ActionEvent event) throws SQLException {
+        
+        if(ques.getValue() == null || ans.getText().equals("")) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setContentText("Empty Fields");
+            alert.getButtonTypes().removeAll(ButtonType.OK,ButtonType.CANCEL);
+            alert.getButtonTypes().addAll(ButtonType.CLOSE);
+            alert.showAndWait();
+            return;
+        }
 
         String fetchSql = "SELECT * FROM account";
         ps = connection.prepareStatement(fetchSql);
