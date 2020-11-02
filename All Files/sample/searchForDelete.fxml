@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchForDelete">
+   <children>
+      <Label layoutX="84.0" layoutY="28.0" prefHeight="58.0" prefWidth="436.0" text="Delete Employee Record">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Line endX="152.39999389648438" endY="1.52587890625E-5" layoutX="292.0" layoutY="97.0" startX="-132.39999389648438" startY="1.52587890625E-5" stroke="#797979" strokeWidth="3.0" />
+      <Label layoutX="14.0" layoutY="188.0" prefHeight="27.0" prefWidth="40.0" text="I.D.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="74.0" layoutY="180.0" prefHeight="44.0" prefWidth="526.0" promptText="Search By I.D. Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="187.0" layoutY="249.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="229.0" styleClass="butn-button" stylesheets="@design.css" text="Search" />
+      <Button layoutX="252.0" layoutY="362.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="99.0" text="Back " />
+   </children>
+</AnchorPane>

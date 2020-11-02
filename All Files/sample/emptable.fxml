@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="696.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmpTable">
+   <children>
+      <TableView fx:id="tableView" layoutY="178.0" prefHeight="445.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="120.79998934268951" text="Id" />
+          <TableColumn fx:id="nameCol" minWidth="8.79998779296875" prefWidth="269.5999984741211" text="Name" />
+            <TableColumn fx:id="depCol" prefWidth="204.00003051757812" text="Department" />
+            <TableColumn fx:id="phoneCol" prefWidth="175.199951171875" text="Pnone Number" />
+            <TableColumn fx:id="joiningCol" prefWidth="95.19992675781248" text="Date Of Joining" />
+        </columns>
+      </TableView>
+      <Line endX="447.0" endY="7.62939453125E-6" layoutX="419.0" layoutY="92.0" startX="-419.0" startY="7.62939453125E-6" stroke="#73aa31" strokeWidth="3.0" />
+      <Label layoutX="201.0" layoutY="26.0" text="Employee Record Table" textFill="#9cb700">
+         <font>
+            <Font name="Consolas" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="765.0" layoutY="664.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="26.0" prefWidth="87.0" text="Back" />
+      <Button layoutX="232.0" layoutY="643.0" mnemonicParsing="false" onAction="#view" prefHeight="42.0" prefWidth="399.0" styleClass="butn-button" stylesheets="@design.css" text="View / Edit">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="search" layoutX="192.0" layoutY="119.0" prefHeight="34.0" prefWidth="454.0" promptText="Search From Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="113.0" layoutY="123.0" prefHeight="27.0" prefWidth="73.0" text="Search : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="716.0" layoutY="114.0" prefHeight="18.0" prefWidth="135.0" text="* For Searching date use" textFill="#0111b9" />
+      <Label layoutX="725.0" layoutY="129.0" prefHeight="18.0" prefWidth="126.0" text="DD-MM-YYYY  Format" textFill="#0111b9" />
+   </children>
+</AnchorPane>
