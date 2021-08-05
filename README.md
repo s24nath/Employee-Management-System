@@ -7,6 +7,8 @@ Used Xampp for Local host and SQL for Database.
 
 Used SceneBuilder for UI Design.
 
+Used JDBC Driver to connect to the Database
+
 
 * Initial Database settings is provided, go through this text document to create the database of this project
 
