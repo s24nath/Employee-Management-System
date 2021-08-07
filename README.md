@@ -1,7 +1,7 @@
 # Employee-Management-System
 
 ## A full Employee Management System Made with Javafx, JDBC, SceneBuilder 
-[General Working Video]()
+[General Working Video](https://drive.google.com/file/d/1eYKUkd1Y6SVF2VJs_pY8e2HqofpPKZ-t/view?usp=sharing)
 ___
 
 Used Xampp for Local host and SQL for Database.
