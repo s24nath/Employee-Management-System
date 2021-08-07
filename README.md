@@ -72,7 +72,7 @@ FileInputStream information in binary information or BLOB in the database.
 
 - The user can view the image before sending the data to the database.
 
-- Applied the validation for :- 
+- Applied the validation for :- [Validation Working Video](https://drive.google.com/file/d/18_Ebv6oqCCgLfXgHCAAMlzEWH1mm8FCB/view?usp=sharing)
   - There should not be any empty fields
   - There should not be the any employees having same I.D. or Aadhaar number in 
 the database. Every employees should have unique I.D. and Aadhaar number
