@@ -55,3 +55,24 @@ input field.
 - At first we need to add the default Login data to the “account” table in phpMyAdmin. For Security 
 Questions refer to previous mentioned Strings. Be careful while copying the Security Questions Strings, 
 they are case sensitive. Note: It is best to create only one single row for Login data in “account” table.
+
+
+
+### Add Employee
+
+[Video](https://drive.google.com/file/d/1wcthC6-83OlJcki1m2x0IBkt-VOFqcdF/view?usp=sharing)
+
+- Employees added get recorded to the “employeerec” table in the database.
+
+- The user can attach JPG and PNG images which will be recorded as BLOB datatype in 
+database. To achieve this I used the FileChooser class of JavaFX to choose/select the 
+image file and File class of JAVA to store that image file. Then used the FileInputStream 
+class of JAVA to read the file, and setBinaryStream() method to store that 
+FileInputStream information in binary information or BLOB in the database.
+
+- The user can view the image before sending the data to the database.
+
+- Applied the validation for :- 
+  - There should not be any empty fields
+  - There should not be the any employees having same I.D. or Aadhaar number in 
+the database. Every employees should have unique I.D. and Aadhaar number
