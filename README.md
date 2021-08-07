@@ -137,3 +137,16 @@ list will be stored, and if the search box empty then **all employees** list wil
 Here to make the search, **not case sensitive**, I first converted both the search text and 
 each column text to lower case and then compared them during the comparing process. 
 I also used `trim()` method of `String` in the search text to delete the **unwanted spaces**.
+
+
+___
+
+### Delete Employee
+[Delete Employee Working Video](https://drive.google.com/file/d/1OkeFmwg-oYHxaetIst1yn0jHEgybD24K/view?usp=sharing)
+
+- The user needs to provide **I.D. Number** of that **Employee** whose information is going to be deleted in the **"employeerec"** table.
+
+- Before deleting, a window of **Employee** with full data is show so that the user can make sure that they are deleting correct employee.
+
+- An confirmation pop-up is also shown while deleting.
+ 
