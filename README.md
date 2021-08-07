@@ -17,7 +17,10 @@ Used JDBC Driver to connect to the Database
 ___
 
 ### Login Page 
-[Video](https://drive.google.com/file/d/17BN2U7M_heY2Xy87ZVNvY4K7nYQCF9BQ/view?usp=sharing)
+[Login Page Working Video](https://drive.google.com/file/d/17BN2U7M_heY2Xy87ZVNvY4K7nYQCF9BQ/view?usp=sharing)
+[Changing I.D. Working Video](https://drive.google.com/file/d/1PhljgwW0H_xMSib-FZXLzr8lYTv7HY-2/view?usp=sharing)
+[Forgot Password Working Video](https://drive.google.com/file/d/1qalZMev6BYZ4PGUe5WJfymOH3p-amBna/view?usp=sharing)
+[Changing Security Question Working Video](https://drive.google.com/file/d/1i6E5XTVyRVW0o0WTVFTnEjKbSSe4j-N3/view?usp=sharing)
 
 - The user needs to input the correct “I.D. Number” and “Password” to get access to managing the 
 Employees. There is another table created in this same database to compare or update the login data 
