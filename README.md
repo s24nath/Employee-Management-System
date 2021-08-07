@@ -17,10 +17,7 @@ Used JDBC Driver to connect to the Database
 ___
 
 ### Login Page 
-[Login Page Working Video](https://drive.google.com/file/d/17BN2U7M_heY2Xy87ZVNvY4K7nYQCF9BQ/view?usp=sharing)
-[Changing I.D. Working Video](https://drive.google.com/file/d/1PhljgwW0H_xMSib-FZXLzr8lYTv7HY-2/view?usp=sharing)
-[Forgot Password Working Video](https://drive.google.com/file/d/1qalZMev6BYZ4PGUe5WJfymOH3p-amBna/view?usp=sharing)
-[Changing Security Question Working Video](https://drive.google.com/file/d/1i6E5XTVyRVW0o0WTVFTnEjKbSSe4j-N3/view?usp=sharing)
+[Login Page Working Video](https://drive.google.com/file/d/17BN2U7M_heY2Xy87ZVNvY4K7nYQCF9BQ/view?usp=sharing)  
 
 - The user needs to input the correct “I.D. Number” and “Password” to get access to managing the 
 Employees. There is another table created in this same database to compare or update the login data 
@@ -29,7 +26,7 @@ of the user
 - Added “Forgot Password” feature if the user forgets the Password to sign in or if they want to change 
 the current Password and set a new Password. The user needs to provide the current “I.D.”, choose the 
 correct Security Questions, and type the correct Answer of that Security Question, as per the recorded 
-data in database. Applied validation feature if there is any empty input field.
+data in database. Applied validation feature if there is any empty input field. [Forgot Password Working Video](https://drive.google.com/file/d/1qalZMev6BYZ4PGUe5WJfymOH3p-amBna/view?usp=sharing) 
 
 - The Answer that is typed by the user is not case sensitive, to achieve this, I converted both user 
 inputted data and recorded data in database to lowercase String, and then compared them.
@@ -49,11 +46,11 @@ are as follows :-
   - "Any secret name or code ?"
   
 - The user can change the I.D., but they need to provide the old I.D. and the current Password to change 
-the I.D. . Applied validation feature if there is any empty input field.
+the I.D. . Applied validation feature if there is any empty input field. [Changing I.D. Working Video](https://drive.google.com/file/d/1PhljgwW0H_xMSib-FZXLzr8lYTv7HY-2/view?usp=sharing)
 
 - The user can also change the selected Security Questions and it’s inputted answer. To change it, the 
 user needs to provide the current I.D. and Password. Applied validation feature if there is any empty 
-input field.
+input field. [Changing Security Question Working Video](https://drive.google.com/file/d/1i6E5XTVyRVW0o0WTVFTnEjKbSSe4j-N3/view?usp=sharing)
 
 - At first we need to add the default Login data to the “account” table in phpMyAdmin. For Security 
 Questions refer to previous mentioned Strings. Be careful while copying the Security Questions Strings, 
