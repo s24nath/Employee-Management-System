@@ -22,12 +22,15 @@ ___
 - The user needs to input the correct “I.D. Number” and “Password” to get access to managing the 
 Employees. There is another table created in this same database to compare or update the login data 
 of the user
+
 - Added “Forgot Password” feature if the user forgets the Password to sign in or if they want to change 
 the current Password and set a new Password. The user needs to provide the current “I.D.”, choose the 
 correct Security Questions, and type the correct Answer of that Security Question, as per the recorded 
 data in database. Applied validation feature if there is any empty input field.
+
 - The Answer that is typed by the user is not case sensitive, to achieve this, I converted both user 
 inputted data and recorded data in database to lowercase String, and then compared them.
+
 - The predefined Security Questions provided are fixed, which means the user cannot create their own 
 Security Questions, but they can input their own custom Answers to it. The Security questions provided 
 are as follows :- 
