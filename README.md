@@ -60,7 +60,7 @@ ___
 
 ### Add Employee
 
-[Video](https://drive.google.com/file/d/1wcthC6-83OlJcki1m2x0IBkt-VOFqcdF/view?usp=sharing)
+[Add Employee Video](https://drive.google.com/file/d/1wcthC6-83OlJcki1m2x0IBkt-VOFqcdF/view?usp=sharing)
 
 - Employees added get recorded to the “employeerec” table in the database.
 
@@ -73,6 +73,28 @@ FileInputStream information in binary information or BLOB in the database.
 - The user can view the image before sending the data to the database.
 
 - Applied the validation for :- [Validation Working Video](https://drive.google.com/file/d/18_Ebv6oqCCgLfXgHCAAMlzEWH1mm8FCB/view?usp=sharing)
-  - There should not be any empty fields
+  - There should not be any empty fields.
   - There should not be the any employees having same I.D. or Aadhaar number in 
-the database. Every employees should have unique I.D. and Aadhaar number
+the database. Every employees should have unique I.D. and Aadhaar number.
+___
+
+### View or Edit Employee
+[View or Edit Employee Working Video](https://drive.google.com/file/d/1S7D2YSDk1dHwC3Lvbbf9dpE1eNtlE8jY/view?usp=sharing)
+
+- The user can view as well as edit the added record of the employee. The record of the 
+employee edited will be updated to the “employeerec” table in database.
+
+- The user need to provide the I.D. Number or Aadhaar Number of the employee to 
+search and get their data from database.
+
+- Added image viewer of the employee. Here the binary information of the image file that 
+is stored in the database as BLOB is fetched with getBinaryStream() method. Then that 
+fetched binary information is read by the read() method of InputStream class, and 
+written to a new file “photo.jpg” by the write() method of OutputStream class. Finally 
+the ImageView class of JavaFx is used to view that image file “photo.jpg”.
+
+- The user can edit all the information of the employee inclcuding the photo of the 
+employee, except the I.D. Number. Here the I.D. number is kept static.
+
+- The DatePicker is not provided here, user has to manually set the date in 
+DD-MM-YYYY format.
