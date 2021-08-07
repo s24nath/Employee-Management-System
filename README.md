@@ -44,4 +44,13 @@ are as follows :-
   - "Which is your favourite super hero ?"
   - "Any secret name or code ?"
   
--
+- The user can change the I.D., but they need to provide the old I.D. and the current Password to change 
+the I.D. . Applied validation feature if there is any empty input field.
+
+- The user can also change the selected Security Questions and it’s inputted answer. To change it, the 
+user needs to provide the current I.D. and Password. Applied validation feature if there is any empty 
+input field.
+
+- At first we need to add the default Login data to the “account” table in phpMyAdmin. For Security 
+Questions refer to previous mentioned Strings. Be careful while copying the Security Questions Strings, 
+they are case sensitive. Note: It is best to create only one single row for Login data in “account” table.
