@@ -65,10 +65,10 @@ ___
 - Employees added get recorded to the “employeerec” table in the database.
 
 - The user can attach JPG and PNG images which will be recorded as BLOB datatype in 
-database. To achieve this I used the FileChooser class of JavaFX to choose/select the 
-image file and File class of JAVA to store that image file. Then used the FileInputStream 
-class of JAVA to read the file, and setBinaryStream() method to store that 
-FileInputStream information in binary information or BLOB in the database.
+database. To achieve this I used the `FileChooser` class of JavaFX to choose/select the 
+image file and `File` class of JAVA to store that image file. Then used the `FileInputStream`
+class of JAVA to read the file, and `setBinaryStream()` method to store that 
+`FileInputStream` information in binary information or BLOB in the database.
 
 - The user can view the image before sending the data to the database.
 
@@ -88,13 +88,52 @@ employee edited will be updated to the “employeerec” table in database.
 search and get their data from database.
 
 - Added image viewer of the employee. Here the binary information of the image file that 
-is stored in the database as BLOB is fetched with getBinaryStream() method. Then that 
-fetched binary information is read by the read() method of InputStream class, and 
-written to a new file “photo.jpg” by the write() method of OutputStream class. Finally 
-the ImageView class of JavaFx is used to view that image file “photo.jpg”.
+is stored in the database as BLOB is fetched with `getBinaryStream()` method. Then that 
+fetched binary information is read by the `read()` method of `InputStream` class, and 
+written to a new file “photo.jpg” by the `write()` method of `OutputStream` class. Finally 
+the `ImageView` class of JavaFx is used to view that image file “photo.jpg”.
 
 - The user can edit all the information of the employee inclcuding the photo of the 
 employee, except the I.D. Number. Here the I.D. number is kept static.
 
 - The DatePicker is not provided here, user has to manually set the date in 
 DD-MM-YYYY format.
+
+___
+
+### Employee List
+[Employee List Working Video](https://drive.google.com/file/d/1kHRHG8IPT2MfOWr7X2pHp3NHKrXReFn6/view?usp=sharing)
+
+- All the list of employees are show in a table form.
+
+- There are only few columns created for displaying the employee information. To see 
+the full employee data, there is view/edit employee option, but first the user need to 
+select a row by clicking on it.
+
+- The table includes the column of :-
+  - Id
+  - Name
+  - Department
+  - Phone Number
+  - Date Of Joining
+
+- Added a Search Box to search employee from the table, by a specific keyword from the 
+columns. To achieve this, I created object of `FilteredList` class from JavaFx and initially 
+stored all the rows of employee from the table in it, which will also store all the 
+employees if the Search Box is empty. Then I linked the search box (it’s text property) 
+with that `FilteredList` object using `Listener` from JavaFx to store all the rows of the 
+employee according to the search text; and also used the `setPredicate()` method to 
+compare the search text through each column one by one from that `FilteredList` object. 
+After comparing, a new list of employee is generated whose columns are matching with 
+the search text, then that `FilteredList` object is overriden with that new generated list. 
+Finally I displayed the list on the table stored in the `FilteredList` object, which is result of 
+the search. This whole process of searching, overriding the list and displaying it on the 
+table, happens every time the search box is provoked, as it is linked by Listener with the 
+`FilteredList` object.
+
+Remember if the search text does not matches with any of the column then an empty 
+list will be stored, and if the search box empty then all employees list will be shown.
+
+Here to make the search, not case sensitive, I first converted both the search text and 
+each column text to lower case and then compared them during the comparing process. 
+I also used `trim()` method of String in the search text to delete the unwanted spaces.
